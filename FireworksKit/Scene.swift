@@ -35,9 +35,12 @@ class Scene: SKScene {
                 return
             }
 
-            if let image = UIImage(named: particleEffect.textureName, in: bundle, compatibleWith: nil) {
-                emitterNode.particleTexture = SKTexture(image: image)
+            guard let image = UIImage(named: particleEffect.textureName, in: bundle, compatibleWith: nil) else {
+                print("Invalid textureName: \(particleEffect.textureName)")
+                return
             }
+
+            emitterNode.particleTexture = SKTexture(image: image)
 
             emitterNode.position.y = {
                 switch particleEffect.verticalPosition {
