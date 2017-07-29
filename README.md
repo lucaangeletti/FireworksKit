@@ -28,7 +28,7 @@ override func viewDidLoad() {
 You can change the color of the particle effect
 
 ```swift
-    fireworksView.particleColor = .green
+fireworksView.particleColor = .green
 ```
 
 ## Cocoapod
