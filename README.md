@@ -40,6 +40,6 @@ fireworksView.particleColor = .green
 
 
 
-## Do you want more effects?
+## Looking for more effects?
 
 You can open an Issue and request a new effect.
