@@ -1,7 +1,7 @@
 # FireworksKit
-Amazing special effects for iOS apps
 
-FireworksKit provides animated particle effects into a UIView you can place everywhere in your app.
+FireworksKit makes it easy to add amazing particle effects you your UIKit app.
+
 
 ## Usage
 
