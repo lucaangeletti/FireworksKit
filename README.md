@@ -7,7 +7,7 @@ FireworksKit provides animated particle effects into a UIView you can place ever
 
 Into the viewDidLoad of your UIViewController
 
-```
+```swift
 override func viewDidLoad() {
 
     super.viewDidLoad()
@@ -27,7 +27,7 @@ override func viewDidLoad() {
 
 You can change the color of the particle effect
 
-```
+```swift
     fireworksView.particleColor = .green
 ```
 
