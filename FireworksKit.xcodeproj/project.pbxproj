@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F43130D01F2CDD17009D6E44 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = F43130CF1F2CDD17009D6E44 /* Rain.sks */; };
-		F449520B1F2BB19900B3C294 /* ParticleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F449520A1F2BB19900B3C294 /* ParticleEffect.swift */; };
+		F449520B1F2BB19900B3C294 /* ParticleEffectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F449520A1F2BB19900B3C294 /* ParticleEffectType.swift */; };
 		F47A3BCF1F2BB03400C5BFBC /* FireworksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F47A3BCD1F2BB03400C5BFBC /* FireworksKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F49C61561F2BF65D0052186B /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = F49C61551F2BF65D0052186B /* Fire.sks */; };
 		F4F29AF91F2BB33800B02DCE /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F29AF81F2BB33800B02DCE /* Scene.swift */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		F43130CF1F2CDD17009D6E44 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
-		F449520A1F2BB19900B3C294 /* ParticleEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEffect.swift; sourceTree = "<group>"; };
+		F449520A1F2BB19900B3C294 /* ParticleEffectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEffectType.swift; sourceTree = "<group>"; };
 		F47A3BCA1F2BB03400C5BFBC /* FireworksKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireworksKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A3BCD1F2BB03400C5BFBC /* FireworksKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireworksKit.h; sourceTree = "<group>"; };
 		F47A3BCE1F2BB03400C5BFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				F4F29B331F2BEB2900B02DCE /* FireworksView.swift */,
 				F4F29AF81F2BB33800B02DCE /* Scene.swift */,
-				F449520A1F2BB19900B3C294 /* ParticleEffect.swift */,
+				F449520A1F2BB19900B3C294 /* ParticleEffectType.swift */,
 				F4F29B301F2BE4C600B02DCE /* Emitters */,
 				F4F29B361F2BEBA600B02DCE /* More Stuff */,
 			);
@@ -179,7 +179,7 @@
 			files = (
 				F4F29AF91F2BB33800B02DCE /* Scene.swift in Sources */,
 				F4F29B341F2BEB2900B02DCE /* FireworksView.swift in Sources */,
-				F449520B1F2BB19900B3C294 /* ParticleEffect.swift in Sources */,
+				F449520B1F2BB19900B3C294 /* ParticleEffectType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Luca Angeletti. All rights reserved.
 //
 
-public enum ParticleEffect: String {
+public enum ParticleEffectType: String {
 
     case
         snow = "Snow",
@@ -41,7 +41,7 @@ public enum ParticleEffect: String {
         }
     }
     
-    public static var all: [ParticleEffect] {
+    public static var all: [ParticleEffectType] {
         return [.snow, .rain, .smoke, .fire]
     }
 }

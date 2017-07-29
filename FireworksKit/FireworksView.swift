@@ -12,13 +12,12 @@ public class FireworksView: SKView {
 
     private let effectScene: Scene
 
-    public init(frame: CGRect, particleEffect: ParticleEffect? = nil) {
+    public override init(frame: CGRect) {
         effectScene = Scene(size: frame.size)
         effectScene.backgroundColor = .clear
         super.init(frame: frame)
         presentScene(effectScene)
         allowsTransparency = true
-        self.particleEffect = particleEffect
         
         isUserInteractionEnabled = false
         
@@ -30,20 +29,13 @@ public class FireworksView: SKView {
     }
 
     public var particleEffect: ParticleEffect? {
-        set {
-            return effectScene.particleEffect = newValue
-        }
-        get {
-            return effectScene.particleEffect
+        didSet {
+            guard let particleEffect = particleEffect else {
+                effectScene.removeParticleEffect()
+                return
+            }
+            effectScene.add(emitterNode: particleEffect.emitter, ofType: particleEffect.type)
         }
     }
 
-    public var particleColor: UIColor? {
-        get {
-            return effectScene.particleColor
-        }
-        set {
-            effectScene.particleColor = newValue
-        }
-    }
 }
