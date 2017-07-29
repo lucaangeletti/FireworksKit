@@ -2,6 +2,7 @@
 
 FireworksKit makes it easy to add amazing particle effects to your UIKit app.
 
+![Image](https://user-images.githubusercontent.com/10343189/28745428-a0f9d96a-7478-11e7-8688-242a06d0d3c7.gif)
 
 ## Usage
 
@@ -36,7 +37,7 @@ fireworksView.particleColor = .green
 ## Requirements
 
 - iOS 9.0+
-- Xcode 9
+- Xcode 9+
 
 
 
