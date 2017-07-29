@@ -15,13 +15,12 @@ override func viewDidLoad() {
 
     // 1. create a FireworksView 
     let fireworksView = FireworksView(frame: view.frame)
-        
-    // 2. add the FireworksView to your view
-    view.addSubview(fireworksView)
-        
-    // 3. select an effect
+    
+    // 2. select an effect
     fireworksView.particleEffect = .rain // you can also use .snow, .smoke or .fire
     
+    // 3. add the FireworksView to your view
+    view.addSubview(fireworksView)
 }
 ```
 ## Changing color
