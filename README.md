@@ -1,6 +1,6 @@
 # FireworksKit
 
-FireworksKit makes it easy to add amazing particle effects you your UIKit app.
+FireworksKit makes it easy to add amazing particle effects to your UIKit app.
 
 
 ## Usage
