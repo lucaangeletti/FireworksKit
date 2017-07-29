@@ -1,7 +1,7 @@
 # FireworksKit
 Amazing special effects for iOS apps
 
-FireworksKit provides particle effects into a UIView that you are free to position in your app.
+FireworksKit provides animated particle effects into a UIView you can place everywhere in your app.
 
 # Usage
 
@@ -22,6 +22,8 @@ override func viewDidLoad() {
 
 }
 ```
+
+# Cocoapod
 
 
 # Do you want more effects?
