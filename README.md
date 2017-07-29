@@ -33,6 +33,12 @@ You can change the color of the particle effect
 
 ## Cocoapod
 
+## Requirements
+
+- iOS 9.0+
+- Xcode 9
+
+
 
 ## Do you want more effects?
 
