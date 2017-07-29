@@ -37,7 +37,7 @@ fireworksView.particleColor = .green
 ## Requirements
 
 - iOS 9.0+
-- Xcode 9
+- Xcode 9+
 
 
 
