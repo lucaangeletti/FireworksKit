@@ -2,7 +2,8 @@
 
 FireworksKit makes it easy to add amazing particle effects to your UIKit app.
 
-![alt text](http://www.giphy.com/gifs/3o6vXQSeAZ4xxQ1s9a)
+(https://giphy.com/embed/3o6vXQSeAZ4xxQ1s9a)
+
 
 ## Usage
 
