@@ -11,19 +11,25 @@ Into the `viewDidLoad` of your `UIViewController`
 ```swift
 override func viewDidLoad() {
 
-    super.viewDidLoad()
-
-    // 1. create a FireworksView 
+    super.viewDidLoad()
+```
+```swift
+    // 1. create a FireworksView 
     let fireworksView = FireworksView(frame: view.frame)
-    
+```    
+```swift    
     // 2. create a particle effect
     let particleEffect = ParticleEffect(type: .rain) // you can also use .snow, .smoke or .fire
-    
+```    
+```swift
     // 3. select an effect
     fireworksView.particleEffect = particleEffect
-    
+```    
+```swift
     // 4. add the FireworksView to your view
     view.addSubview(fireworksView)
+```    
+```swift
 }
 ```
 ## Changing color
