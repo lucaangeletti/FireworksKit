@@ -1,4 +1,7 @@
+<p align="center">
 <img src="https://user-images.githubusercontent.com/10343189/28755302-c7b3137a-7557-11e7-8d83-61bf94a28480.png" width="200">
+</p>
+
 
 # FireworksKit
 
