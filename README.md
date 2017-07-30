@@ -4,7 +4,7 @@ FireworksKit makes it easy to add amazing particle effects to your UIKit app.
 
 ![Image](https://user-images.githubusercontent.com/10343189/28745428-a0f9d96a-7478-11e7-8688-242a06d0d3c7.gif)
 
-## Usage
+## Usage via Code
 
 Into the `viewDidLoad` of your `UIViewController`
 
@@ -31,7 +31,7 @@ override func viewDidLoad() {
 ```swift
 }
 ```
-## Changing color
+#### Changing color
 
 You can change the color of the particle effect
 
@@ -39,7 +39,14 @@ You can change the color of the particle effect
 fireworksView.particleEffect?.particleColor = .green
 ```
 
-## Cocoapod
+## Usage with Interface Builder
+
+TODO
+
+
+## Integration
+
+TODO
 
 ## Requirements
 
