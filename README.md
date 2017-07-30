@@ -58,8 +58,10 @@ TODO
 - iOS 9.0+
 - Xcode 9+
 
-
-
 ## Looking for more effects?
 
 You can open an Issue and request a new effect.
+
+## License
+
+FireworksKit is released under an MIT license. See [License.md](/LICENSE) for more information.
