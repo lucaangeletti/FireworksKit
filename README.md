@@ -10,7 +10,6 @@ Into the `viewDidLoad` of your `UIViewController`
 
 ```swift
 override func viewDidLoad() {
-
     super.viewDidLoad()
 ```
 ```swift
@@ -22,7 +21,7 @@ override func viewDidLoad() {
     let particleEffect = ParticleEffect(type: .rain) // you can also use .snow, .smoke or .fire
 ```    
 ```swift
-    // 3. select an effect
+    // 3. apply an effect
     fireworksView.particleEffect = particleEffect
 ```    
 ```swift
