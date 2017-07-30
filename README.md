@@ -56,7 +56,7 @@ TODO
 ## Requirements
 
 - iOS 9.0+
-- Xcode 9+
+- Xcode 8+
 
 ## Looking for more effects?
 
