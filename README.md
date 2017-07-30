@@ -1,5 +1,6 @@
+<div style="text-align:center">
 <img src="https://user-images.githubusercontent.com/10343189/28755261-01a33e6c-7557-11e7-8eaf-8a6186e75a6c.png" width="200" style="text-align:center;">
-
+</div>
 # FireworksKit
 
 FireworksKit makes it easy to add amazing particle effects to your UIKit app.
