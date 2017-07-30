@@ -14,14 +14,16 @@ class Scene: SKScene {
         super.didMove(to: view)
         self.anchorPoint.x = 0.5
         self.anchorPoint.y = 0.5
+        backgroundColor = .clear
+        scaleMode = .resizeFill
     }
 
-    func removeParticleEffect() {
+    func removeEmitterNodes() {
         children.filter { $0 is SKEmitterNode }.forEach { $0.removeFromParent() }
     }
 
     func add(emitterNode: SKEmitterNode, ofType type: ParticleEffectType) {
-        removeParticleEffect()
+        removeEmitterNodes()
 
         emitterNode.position.y = {
             switch type.verticalPosition {

@@ -6,6 +6,8 @@
 //  Copyright © 2017 Luca Angeletti. All rights reserved.
 //
 
+import SpriteKit
+
 public enum ParticleEffectType: String {
 
     case
@@ -44,6 +46,15 @@ public enum ParticleEffectType: String {
     public static var all: [ParticleEffectType] {
         return [.snow, .rain, .smoke, .fire]
     }
+    
+//    func setup(emitterNode: SKEmitterNode) {
+//        switch self {
+//        case .snow: return "spark"
+//        case .rain: return "spark"
+//        case .smoke: return "spark"
+//        case .fire: return "spark"
+//        }
+//    }
 }
 
 enum VerticalPosition {

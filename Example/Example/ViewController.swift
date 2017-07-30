@@ -21,7 +21,7 @@ class TableViewController: UITableViewController {
         return [self.selectedIndexEffect, self.selectedIndexColor].flatMap { $0 }
     }
 
-    private let sectionTitles = ["Effects", "Color"]
+    private let sectionTitles = ["Effects", "Colors"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,10 +47,12 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        switch section {
+        case 0:
             return ParticleEffectType.all.count
-        } else {
+        case 1:
             return Color.all.count
+        default: fatalError()
         }
     }
 
@@ -90,6 +92,8 @@ class TableViewController: UITableViewController {
         navigationController?.navigationBar.isTranslucent = false
         tableView.separatorColor = .darkGray
         tableView.reloadData()
+        
+
     }
 
     @IBAction func didTapLightUIButton(_ sender: UIBarButtonItem) {

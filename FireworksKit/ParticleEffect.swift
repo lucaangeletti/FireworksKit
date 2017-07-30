@@ -10,21 +10,30 @@ import SpriteKit
 
 public class ParticleEffect {
     
-    let type: ParticleEffectType
+    public let type: ParticleEffectType
+
     let emitter: SKEmitterNode
-    
+
     public var particleColor: UIColor {
-        didSet {
-            emitter.particleColor = particleColor
+        get {
+            return emitter.particleColor
+        }
+        set {
+            emitter.particleColor = newValue
+            emitter.particleColorBlendFactor = 1
+            emitter.particleColorSequence = nil
         }
     }
-    
+
     public var particleSpeed: CGFloat {
-        didSet {
-            emitter.particleSpeed = particleSpeed
+        get {
+            return emitter.particleSpeed
+        }
+        set {
+            emitter.particleSpeed = newValue
         }
     }
-    
+
     public init(type: ParticleEffectType) {
         let bundle = Bundle(for: Scene.self as AnyClass)
         let path = bundle.path(forResource: type.rawValue, ofType: "sks")!
@@ -32,14 +41,7 @@ public class ParticleEffect {
         let image = UIImage(named: type.textureName, in: bundle, compatibleWith: nil)!
         emitterNode.particleTexture = SKTexture(image: image)
         self.emitter = emitterNode
-        
-        //TODO: this should now be exectued for snow
-        emitter.particleColorBlendFactor = 1
-        emitter.particleColorSequence = nil
         self.type = type
-        
-        self.particleColor = emitter.particleColor
-        self.particleSpeed = emitter.particleSpeed
     }
 }
 
