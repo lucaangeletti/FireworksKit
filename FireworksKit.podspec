@@ -30,5 +30,5 @@ s.framework = "UIKit"
 s.source_files = "FireworksKit/**/*.{swift}"
 
 # 9
-s.resources = "FireworksKit/**/*.{png,jpeg,jpg,storyboard,xib}"
+s.resources = "FireworksKit/**/*.{png,jpeg,jpg,storyboard,xib,sks}"
 end
