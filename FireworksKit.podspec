@@ -14,7 +14,7 @@ s.version = "0.1.0"
 s.license = { :type => "MIT", :file => "LICENSE" }
 
 # 4 - Replace with your name and e-mail address
-s.author = { "Luca Angeletti" => "luca.angeletti@gmail.com" }
+s.author = { "Luca Angeletti" => "appzyourlife@gmail.com" }
 
 # 5 - Replace this URL with your own Github page's URL (from the address bar)
 s.homepage = "https://github.com/appzYourLife"
