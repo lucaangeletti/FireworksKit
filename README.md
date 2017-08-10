@@ -7,6 +7,13 @@
 
 FireworksKit makes it easy to add amazing particle effects to your UIKit app.
 
+
+
+[![Image](https://img.shields.io/npm/l/express.svg)](https://github.com/appzYourLife/FireworksKit/blob/master/LICENSE)
+![Xcode 8.3.3+](https://img.shields.io/badge/Xcode-8.3.3%2B-blue.svg)
+![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
+![Swift 3.1+](https://img.shields.io/badge/Swift-3.1%2B-orange.svg)
+
 ![Image](https://user-images.githubusercontent.com/10343189/28745428-a0f9d96a-7478-11e7-8688-242a06d0d3c7.gif)
 
 ## Usage via Code
@@ -47,7 +54,6 @@ fireworksView.particleEffect?.particleColor = .green
 ## Usage with Interface Builder
 
 TODO
-
 
 ## Integration
 
