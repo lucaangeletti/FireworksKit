@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F449520B1F2BB19900B3C294 /* ParticleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F449520A1F2BB19900B3C294 /* ParticleEffect.swift */; };
+		F449520B1F2BB19900B3C294 /* ParticleEffectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F449520A1F2BB19900B3C294 /* ParticleEffectType.swift */; };
 		F47A3BCF1F2BB03400C5BFBC /* FireworksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F47A3BCD1F2BB03400C5BFBC /* FireworksKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F49C61561F2BF65D0052186B /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = F49C61551F2BF65D0052186B /* Fire.sks */; };
+		F4BEDD341F325C520078325C /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = F4BEDD301F325C520078325C /* Fire.sks */; };
+		F4BEDD351F325C520078325C /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = F4BEDD311F325C520078325C /* Rain.sks */; };
+		F4BEDD361F325C520078325C /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F4BEDD321F325C520078325C /* Smoke.sks */; };
+		F4BEDD371F325C520078325C /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = F4BEDD331F325C520078325C /* Snow.sks */; };
 		F4F29AF91F2BB33800B02DCE /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F29AF81F2BB33800B02DCE /* Scene.swift */; };
-		F4F29AFE1F2BB40500B02DCE /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = F4F29AFC1F2BB40500B02DCE /* Snow.sks */; };
 		F4F29AFF1F2BB40500B02DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F29AFD1F2BB40500B02DCE /* Assets.xcassets */; };
-		F4F29B2C1F2BBCC800B02DCE /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = F4F29B2B1F2BBCC800B02DCE /* Rain.sks */; };
-		F4F29B321F2BE56600B02DCE /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = F4F29B311F2BE56600B02DCE /* Smoke.sks */; };
 		F4F29B341F2BEB2900B02DCE /* FireworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F29B331F2BEB2900B02DCE /* FireworksView.swift */; };
+		F4FD8CC61F2D2A10001F9595 /* ParticleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD8CC51F2D2A10001F9595 /* ParticleEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F449520A1F2BB19900B3C294 /* ParticleEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEffect.swift; sourceTree = "<group>"; };
+		F449520A1F2BB19900B3C294 /* ParticleEffectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEffectType.swift; sourceTree = "<group>"; };
 		F47A3BCA1F2BB03400C5BFBC /* FireworksKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FireworksKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47A3BCD1F2BB03400C5BFBC /* FireworksKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireworksKit.h; sourceTree = "<group>"; };
 		F47A3BCE1F2BB03400C5BFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F49C61551F2BF65D0052186B /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		F4BEDD301F325C520078325C /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Fire.sks; path = Resources/Fire.sks; sourceTree = "<group>"; };
+		F4BEDD311F325C520078325C /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Rain.sks; path = Resources/Rain.sks; sourceTree = "<group>"; };
+		F4BEDD321F325C520078325C /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Smoke.sks; path = Resources/Smoke.sks; sourceTree = "<group>"; };
+		F4BEDD331F325C520078325C /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Snow.sks; path = Resources/Snow.sks; sourceTree = "<group>"; };
 		F4F29AF81F2BB33800B02DCE /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		F4F29AFC1F2BB40500B02DCE /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
 		F4F29AFD1F2BB40500B02DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4F29B2B1F2BBCC800B02DCE /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
-		F4F29B311F2BE56600B02DCE /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
 		F4F29B331F2BEB2900B02DCE /* FireworksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworksView.swift; sourceTree = "<group>"; };
+		F4FD8CC51F2D2A10001F9595 /* ParticleEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,8 @@
 			children = (
 				F4F29B331F2BEB2900B02DCE /* FireworksView.swift */,
 				F4F29AF81F2BB33800B02DCE /* Scene.swift */,
-				F449520A1F2BB19900B3C294 /* ParticleEffect.swift */,
+				F449520A1F2BB19900B3C294 /* ParticleEffectType.swift */,
+				F4FD8CC51F2D2A10001F9595 /* ParticleEffect.swift */,
 				F4F29B301F2BE4C600B02DCE /* Emitters */,
 				F4F29B361F2BEBA600B02DCE /* More Stuff */,
 			);
@@ -74,10 +77,10 @@
 		F4F29B301F2BE4C600B02DCE /* Emitters */ = {
 			isa = PBXGroup;
 			children = (
-				F4F29AFC1F2BB40500B02DCE /* Snow.sks */,
-				F4F29B2B1F2BBCC800B02DCE /* Rain.sks */,
-				F4F29B311F2BE56600B02DCE /* Smoke.sks */,
-				F49C61551F2BF65D0052186B /* Fire.sks */,
+				F4BEDD301F325C520078325C /* Fire.sks */,
+				F4BEDD311F325C520078325C /* Rain.sks */,
+				F4BEDD321F325C520078325C /* Smoke.sks */,
+				F4BEDD331F325C520078325C /* Snow.sks */,
 			);
 			name = Emitters;
 			sourceTree = "<group>";
@@ -162,11 +165,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F29B2C1F2BBCC800B02DCE /* Rain.sks in Resources */,
+				F4BEDD351F325C520078325C /* Rain.sks in Resources */,
 				F4F29AFF1F2BB40500B02DCE /* Assets.xcassets in Resources */,
-				F4F29AFE1F2BB40500B02DCE /* Snow.sks in Resources */,
-				F49C61561F2BF65D0052186B /* Fire.sks in Resources */,
-				F4F29B321F2BE56600B02DCE /* Smoke.sks in Resources */,
+				F4BEDD341F325C520078325C /* Fire.sks in Resources */,
+				F4BEDD371F325C520078325C /* Snow.sks in Resources */,
+				F4BEDD361F325C520078325C /* Smoke.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4FD8CC61F2D2A10001F9595 /* ParticleEffect.swift in Sources */,
 				F4F29AF91F2BB33800B02DCE /* Scene.swift in Sources */,
 				F4F29B341F2BEB2900B02DCE /* FireworksView.swift in Sources */,
-				F449520B1F2BB19900B3C294 /* ParticleEffect.swift in Sources */,
+				F449520B1F2BB19900B3C294 /* ParticleEffectType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

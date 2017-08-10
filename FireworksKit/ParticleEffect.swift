@@ -1,51 +1,47 @@
 //
-//  Effect.swift
+//  ParticleEffect.swift
 //  FireworksKit
 //
-//  Created by Luca Angeletti on 28/07/2017.
+//  Created by Luca Angeletti on 29/07/2017.
 //  Copyright © 2017 Luca Angeletti. All rights reserved.
 //
 
-public enum ParticleEffect: String {
+import SpriteKit
 
-    case
-        snow = "Snow",
-        rain = "Rain",
-        smoke = "Smoke",
-        fire = "Fire"
-
-    var textureName: String {
-        switch self {
-        case .snow: return "spark"
-        case .rain: return "spark"
-        case .smoke: return "spark"
-        case .fire: return "spark"
-        }
-    }
-
-    var shouldResize: Bool {
-        switch self {
-        case .snow: return true
-        case .rain: return true
-        case .smoke: return true
-        case .fire: return true
-        }
-    }
-
-    var verticalPosition: VerticalPosition {
-        switch self {
-        case .snow: return .top
-        case .rain: return .top
-        case .smoke: return .bottom
-        case .fire: return .bottom
-        }
-    }
+public class ParticleEffect {
     
-    public static var all: [ParticleEffect] {
-        return [.snow, .rain, .smoke, .fire]
+    public let type: ParticleEffectType
+
+    let emitter: SKEmitterNode
+
+    public var particleColor: UIColor {
+        get {
+            return emitter.particleColor
+        }
+        set {
+            emitter.particleColor = newValue
+            emitter.particleColorBlendFactor = 1
+            emitter.particleColorSequence = nil
+        }
+    }
+
+    public var particleSpeed: CGFloat {
+        get {
+            return emitter.particleSpeed
+        }
+        set {
+            emitter.particleSpeed = newValue
+        }
+    }
+
+    public init(type: ParticleEffectType) {
+        let bundle = Bundle(for: Scene.self as AnyClass)
+        let path = bundle.path(forResource: type.rawValue, ofType: "sks")!
+        let emitterNode = NSKeyedUnarchiver.unarchiveObject(withFile: path) as! SKEmitterNode
+        let image = UIImage(named: type.textureName, in: bundle, compatibleWith: nil)!
+        emitterNode.particleTexture = SKTexture(image: image)
+        self.emitter = emitterNode
+        self.type = type
     }
 }
 
-enum VerticalPosition {
-    case top, middle, bottom
-}

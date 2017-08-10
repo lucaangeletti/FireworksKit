@@ -62,11 +62,11 @@
 			children = (
 				F4F29B101F2BB9E100B02DCE /* AppDelegate.swift */,
 				F4F29B121F2BB9E100B02DCE /* ViewController.swift */,
+				F4D45ADB1F2CB71C009D688D /* Color.swift */,
 				F4F29B141F2BB9E100B02DCE /* Main.storyboard */,
 				F4F29B171F2BB9E100B02DCE /* Assets.xcassets */,
 				F4F29B191F2BB9E100B02DCE /* LaunchScreen.storyboard */,
 				F4F29B1C1F2BB9E100B02DCE /* Info.plist */,
-				F4D45ADB1F2CB71C009D688D /* Color.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";

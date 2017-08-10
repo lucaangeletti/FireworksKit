@@ -12,38 +12,50 @@ public class FireworksView: SKView {
 
     private let effectScene: Scene
 
-    public init(frame: CGRect, particleEffect: ParticleEffect? = nil) {
+    @IBInspectable var particleName: String?
+    @IBInspectable var particleColor: UIColor?
+
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+
+        if let particleEffectName = particleName {
+            guard let particleEffectType = ParticleEffectType(rawValue: particleEffectName) else {
+                print("Invalid effect name: \(particleEffectName)")
+                return
+            }
+            self.particleEffect = ParticleEffect(type: particleEffectType)
+        }
+        if let particleColor = particleColor {
+            particleEffect?.particleColor = particleColor
+        }
+    }
+
+    public override init(frame: CGRect) {
         effectScene = Scene(size: frame.size)
-        effectScene.backgroundColor = .clear
         super.init(frame: frame)
-        presentScene(effectScene)
-        allowsTransparency = true
-        self.particleEffect = particleEffect
-        
-        isUserInteractionEnabled = false
-        
-        effectScene.scaleMode = .aspectFill
+        prepare()
     }
 
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        self.effectScene = Scene(size: .zero)
+        super.init(coder: aDecoder)
+        self.effectScene.size = frame.size
+        prepare()
+    }
+
+    private func prepare() {
+        presentScene(effectScene)
+        allowsTransparency = true
+        isUserInteractionEnabled = false
     }
 
     public var particleEffect: ParticleEffect? {
-        set {
-            return effectScene.particleEffect = newValue
-        }
-        get {
-            return effectScene.particleEffect
-        }
-    }
-
-    public var particleColor: UIColor? {
-        get {
-            return effectScene.particleColor
-        }
-        set {
-            effectScene.particleColor = newValue
+        didSet {
+            guard let particleEffect = particleEffect else {
+                effectScene.removeEmitterNodes()
+                return
+            }
+            effectScene.add(emitterNode: particleEffect.emitter, ofType: particleEffect.type)
         }
     }
 }
