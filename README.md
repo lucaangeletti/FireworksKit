@@ -21,6 +21,10 @@ FireworksKit makes it easy to add amazing particle effects to your UIKit app.
 Into the `viewDidLoad` of your `UIViewController`
 
 ```swift
+import FireworksKit
+```
+
+```swift
 override func viewDidLoad() {
     super.viewDidLoad()
 ```
