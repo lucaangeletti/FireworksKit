@@ -18,11 +18,13 @@ FireworksKit makes it easy to add amazing particle effects to your UIKit app.
 
 ## Usage via Code
 
-Into the `viewDidLoad` of your `UIViewController`
+First of all you need to
 
 ```swift
 import FireworksKit
 ```
+
+then into the `viewDidLoad` of your `UIViewController`
 
 ```swift
 override func viewDidLoad() {
