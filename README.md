@@ -61,7 +61,11 @@ TODO
 
 ## Integration
 
-TODO
+Add this line to your Podfile
+
+```
+pod 'FireworksKit', :git => 'https://github.com/lucaangeletti/FireworksKit.git'
+```
 
 ## Requirements
 
