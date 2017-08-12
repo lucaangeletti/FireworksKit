@@ -8,16 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F4D45ADC1F2CB71C009D688D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D45ADB1F2CB71C009D688D /* Color.swift */; };
+		F4E52B351F3EFBE70062DA3C /* FireworksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E52B341F3EFBE70062DA3C /* FireworksKit.framework */; };
+		F4E52B361F3EFBE70062DA3C /* FireworksKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E52B341F3EFBE70062DA3C /* FireworksKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4F29B111F2BB9E100B02DCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F29B101F2BB9E100B02DCE /* AppDelegate.swift */; };
 		F4F29B131F2BB9E100B02DCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F29B121F2BB9E100B02DCE /* ViewController.swift */; };
 		F4F29B161F2BB9E100B02DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F29B141F2BB9E100B02DCE /* Main.storyboard */; };
 		F4F29B181F2BB9E100B02DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F29B171F2BB9E100B02DCE /* Assets.xcassets */; };
 		F4F29B1B1F2BB9E100B02DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F29B191F2BB9E100B02DCE /* LaunchScreen.storyboard */; };
-		F4F29B2D1F2BBD6500B02DCE /* FireworksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F29B291F2BBA2500B02DCE /* FireworksKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4E52B371F3EFBE80062DA3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4E52B361F3EFBE70062DA3C /* FireworksKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F4D45ADB1F2CB71C009D688D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F4E52B341F3EFBE70062DA3C /* FireworksKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FireworksKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F29B0D1F2BB9E100B02DCE /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F29B101F2BB9E100B02DCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F29B121F2BB9E100B02DCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F29B2D1F2BBD6500B02DCE /* FireworksKit.framework in Frameworks */,
+				F4E52B351F3EFBE70062DA3C /* FireworksKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +59,7 @@
 		F4F29B041F2BB9E100B02DCE = {
 			isa = PBXGroup;
 			children = (
+				F4E52B341F3EFBE70062DA3C /* FireworksKit.framework */,
 				F4F29B0F1F2BB9E100B02DCE /* Example */,
 				F4F29B0E1F2BB9E100B02DCE /* Products */,
 				F4F29B281F2BBA2500B02DCE /* Frameworks */,
@@ -89,6 +106,7 @@
 				F4F29B091F2BB9E100B02DCE /* Sources */,
 				F4F29B0A1F2BB9E100B02DCE /* Frameworks */,
 				F4F29B0B1F2BB9E100B02DCE /* Resources */,
+				F4E52B371F3EFBE80062DA3C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
